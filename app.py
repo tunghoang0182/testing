@@ -111,7 +111,7 @@ if uploaded_file is not None:
 
     # Display transcription or text content
     st.subheader("📜 Transcription / Uploaded Text")
-    st.text(transcription_text)
+    st.text_area("Transcription / Uploaded Text", transcription_text, height=300)
 
     # Summarize the text
     with st.spinner('Generating summary...'):
